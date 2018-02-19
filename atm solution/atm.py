@@ -1,18 +1,21 @@
 value= 483
-while value < 500:
+high_balance=500
+if value < high_balance:
 	x= [int(i) for i in str(value)]
-	a= x[0]* "give 100\n"
-	print a
-	b= x[1] 
-	if b>5:
+	Hunbreds= x[0]* "give 100\n"
+	print Hunbreds
+	Tens= x[1] 
+	if Tens>5:
 		print "give 50"
-		print int(b-5) * "give 10\n"
+		print int(Tens-5) * "give 10\n"
 	else:
-		print b * "give 10\n"
-	c= x[2]
-	if b>5:
+		print Tens * "give 10\n"
+	Dollers = x[2]
+	
+	if Dollers>5:
 		print "give 5"
-		print "give "+ str(int(b-5))
+		print "give "+ str(int(Dollers-5))
 	else:
-		print "give "+ str(int(b-5))
-	break
+		print "give "+ str(Dollers)
+else:
+	print "higher than expected. Please enter a number less than 500"	

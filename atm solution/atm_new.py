@@ -30,9 +30,7 @@ def withdraw(balance, value):
 			elif value < 5:
 				print("give " + str(value))
 				value = 0
-	
-		return balance
-	
+	return balance
 	
 
 balance = 500
@@ -40,3 +38,4 @@ balance = withdraw(balance, 277)
 balance = withdraw(balance, 30)
 balance = withdraw(balance, 5)
 balance = withdraw(balance, 500)
+#print balance

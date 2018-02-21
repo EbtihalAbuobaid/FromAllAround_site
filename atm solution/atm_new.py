@@ -1,7 +1,7 @@
 
 def withdraw(balance, value):
 	print "Current balance = " + str(balance)
-	current_balance =  balance- value
+	
 	if   value > balance:
 		print "Can't give you all this money !!"
 
@@ -9,6 +9,7 @@ def withdraw(balance, value):
 		print "More than zero plz!" 
 
 	else:
+		balance -= value
 		while value > 0:
         
 			if value >= 100:
@@ -30,7 +31,7 @@ def withdraw(balance, value):
 				print("give " + str(value))
 				value = 0
 	
-	return current_balance
+		return balance
 	
 	
 

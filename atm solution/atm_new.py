@@ -5,7 +5,7 @@ def withdraw(balance, value):
 	if   value > balance:
 		print "Can't give you all this money !!"
 
-	elif value < 0:
+	elif value <= 0:
 		print "More than zero plz!" 
 
 	else:
@@ -29,8 +29,8 @@ def withdraw(balance, value):
 			elif value < 5:
 				print("give " + str(value))
 				value = 0
-	balance= current_balance
-	return balance
+	
+	return current_balance
 	
 	
 
